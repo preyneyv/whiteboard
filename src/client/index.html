@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whiteboard</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="/css/index.css">
+
+	<!-- Get the libraries -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+
+	<script src="/js/index.js" defer></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+<body>
+	<div id="crosshair"></div>
+	<canvas id="whiteboard">
+		Sorry, your browser doesn't support the HTML5 Canvas.
+		Try updating your browser to the latest version.
+	</canvas>
+	<div id="sidebar">
+		<div id="tools">
+			<div data-tool="pen" id="tool__pen"></div>
+			<div data-tool="eraser" id="tool__eraser"></div>
+		</div>	
+		<div id="colors">
+			<div data-color="#000" id="color__black"></div>
+			<div data-color="#07e" id="color__blue"></div>
+			<div data-color="#0a0" id="color__green"></div>
+			<div data-color="#eb0" id="color__yellow"></div>
+			<div data-color="#e22" id="color__red"></div>
+		</div>
+	</div>
+</body>
+</html>
