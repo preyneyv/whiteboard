@@ -3,9 +3,9 @@ const config = require('./config.js');
 const app = require('express')();
 const server = require('http').Server(app);
 const io = require('socket.io')(server);
-
+const port = process.env.PORT || config.port;
 // Start the server.
-server.listen(config.port, () => console.log(`Express and Socket.io running on port ${config.port}!`));
+server.listen(port, () => console.log(`Express and Socket.io running on port ${port}!`));
 
 // Initialize the routes.
 require('./routes.js')(app);
